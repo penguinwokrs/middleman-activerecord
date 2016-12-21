@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "middleman-activerecord"
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Daniel Pehrson"]
   s.email       = ["dpehrson@qurve.com"]
@@ -17,8 +17,9 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # The version of middleman-core your extension depends on
-  s.add_runtime_dependency('middleman-core', ['>= 3.3.7'])
-  s.add_runtime_dependency('activerecord', ['~> 4.1.8'])
+  s.add_runtime_dependency('middleman-core', ['>= 4.1.0'])
+  s.add_runtime_dependency('activerecord', ['~> 5.0.0'])
+  s.add_development_dependency 'appraisal'
 
   # Additional dependencies
   # s.add_runtime_dependency("gem-name", "gem-version")

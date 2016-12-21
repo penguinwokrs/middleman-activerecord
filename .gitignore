@@ -1,5 +1,7 @@
+.bundle
 # Ignore bundler lock file
 /Gemfile.lock
-
+/gemfiles/*.gemfile.lock
+/vendor/bundle*
 # Ignore pkg folder
 /pkg

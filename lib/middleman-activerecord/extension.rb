@@ -3,7 +3,7 @@ require 'active_record'
 module Middleman
   class ActiveRecordExtension < Extension
     option :database_config, 'db/config.yml', 'The location of the YAML database configuration.'
-    option :database_environment, :development, 'The database environment to use.'
+    option :database_environment, ENV.fetch('MN_ENV', :development).to_sym, 'The database environment to use.'
 
     def initialize(app, options_hash = {}, &block)
       super
